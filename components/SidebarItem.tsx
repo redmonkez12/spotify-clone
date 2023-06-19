@@ -21,7 +21,7 @@ export const SidebarItem: FC<SidebarItemProps> = ({ icon: Icon, label, active, h
                 items-center
                 w-full
                 gap-x-4
-                text-md
+                text-sm
                 font-medium 
                 cursor-pointer
                 hover:text-white

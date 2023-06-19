@@ -7,6 +7,7 @@ import { BiSearch } from "react-icons/bi";
 
 import { Box } from "@/components/Box";
 import { SidebarItem } from "@/components/SidebarItem";
+import { Library } from "@/components/Library";
 
 type SidebarProps = {
 
@@ -59,9 +60,12 @@ export const Sidebar: FC<PropsWithChildren<SidebarProps>> = ({ children }) => {
                     ))}
                 </Box>
                 <Box className={"overflow-y-auto h-full"}>
-                    Song Library
+                    <Library/>
                 </Box>
             </div>
+            <main className={"h-full flex-1 overflow-y-auto py-2"}>
+                {children}
+            </main>
         </div>
     );
 };
