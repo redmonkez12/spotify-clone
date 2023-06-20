@@ -4,6 +4,7 @@ import { Sidebar } from "@/components/Sidebar";
 import React from "react";
 import { SupabaseProvider } from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
+import { ModalProvider } from "@/providers/ModalProvider";
 
 const figTree = Figtree({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <body className={figTree.className}>
         <SupabaseProvider>
             <UserProvider>
+                <ModalProvider/>
                 <Sidebar>
                     {children}
                 </Sidebar>
